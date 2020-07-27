@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FunFact.unity
+    guid: 9d080da2375c13e4ea2e9b67dc06247b
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Kompetensi.unity
+    guid: 6319077dceec4584b86c9beeb735c82a
+  - enabled: 1
+    path: Assets/Scenes/Petunjuk.unity
+    guid: fbbd05baba625fd47bdf5e64d5be7dfe
+  - enabled: 1
+    path: Assets/Scenes/Peneliti.unity
+    guid: 6f18801f1fd79fa4e8c8dfe7f8d7e708
+  - enabled: 1
+    path: Assets/Scenes/AugRel.unity
+    guid: 660079fcef2dbec42868597e51fa4514
+  - enabled: 1
+    path: Assets/Scenes/Keluar.unity
+    guid: 19037fef91d103d43a8246f41e30f51c
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: 64c184bc0006f1e46a671832ead27f29
   m_configObjects: {}
