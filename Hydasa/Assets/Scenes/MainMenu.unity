@@ -446,7 +446,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: Kompetensi
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1043970394433064295
@@ -558,7 +558,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: AugRel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &2031285688127556430
@@ -871,7 +871,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: Petunjuk
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &3938330606732013462
@@ -1257,7 +1257,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Loading
+          m_StringArgument: Peneliti
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &6182055891637692025
