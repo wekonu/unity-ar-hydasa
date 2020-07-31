@@ -14,4 +14,23 @@ public class AppNavigation : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                OpenScene("Keluar");
+            }
+            else if (SceneManager.GetActiveScene().name == "Keluar")
+            {
+                ExitApp();
+            }
+            else
+            {
+                OpenScene("MainMenu");
+            }
+        }
+    }
 }
