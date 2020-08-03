@@ -15,6 +15,11 @@ public class AppNavigation : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void OpenLink(string url)
+    {
+        Application.OpenURL(url);
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
