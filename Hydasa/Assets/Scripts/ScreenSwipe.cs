@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class ScreenSwipe : MonoBehaviour
 {
-    public float maxTime;
-    public float minSwipeDist;
-    public string right;
-    public string left;
+    public float maxTime = 0.5f;
+    public float minSwipeDist = 50f;
     float startTime;
     float endTime;
     float swipeDistance;
     float swipeTime;
     Vector3 startPos;
     Vector3 endPos;
+
+    SlideManage slideManage;
+
+    private void Awake()
+    {
+        slideManage = FindObjectOfType<SlideManage>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,10 +54,12 @@ public class ScreenSwipe : MonoBehaviour
             if (distance.x > 0)
             {
                 // swipe left
+                slideManage.OpenNextSlide();
             }
             else if (distance.x < 0)
             {
                 // swipe right
+                slideManage.OpenPreviousSlide();
             }
         }
         else if (Mathf.Abs(distance.x) < Mathf.Abs(distance.y))

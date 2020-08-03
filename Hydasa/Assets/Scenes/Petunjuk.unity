@@ -419,7 +419,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 933781777}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6294842917347781613}
+        m_MethodName: OpenNextSlide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &933781777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1879542637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -803,7 +814,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1879542639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6294842917347781613}
+        m_MethodName: OpenPreviousSlide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1879542639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,6 +1075,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6294842917347781614}
   - component: {fileID: 6294842917347781615}
+  - component: {fileID: 6294842917347781616}
+  - component: {fileID: 6294842917347781613}
   m_Layer: 0
   m_Name: AppNavigator
   m_TagString: Untagged
@@ -1060,6 +1084,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6294842917347781613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294842917347781612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77313cb0f9153043989158ed91d191f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slides:
+  - {fileID: 4337627736236246114}
+  - {fileID: 1065744144}
+  - {fileID: 1088293663}
 --- !u!4 &6294842917347781614
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,6 +1129,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0c5426e8485e94796f11e8fe20c662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6294842917347781616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294842917347781612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e248d8cb59b423148b1e860e05581c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 0.5
+  minSwipeDist: 50
 --- !u!114 &7163866609886990469
 MonoBehaviour:
   m_ObjectHideFlags: 0
