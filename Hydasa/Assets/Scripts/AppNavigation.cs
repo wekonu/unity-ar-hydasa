@@ -12,7 +12,7 @@ public class AppNavigation : MonoBehaviour
 
     public void OpenScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneTransition.OpenScene(sceneName);
     }
 
     public void OpenLink(string url)
