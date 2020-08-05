@@ -16,8 +16,10 @@ public class SlideManage : MonoBehaviour
     private void Awake()
     {
         slideList = slides.ToList<GameObject>();
-        Debug.Log("wahyu: total slides" + slideList.Count);
-        Debug.Log("wahyu: i = " + i);
+        for (int j = 0; j < slideList.Count; j++)
+        {
+            slideList[j].SetActive(false);
+        }
         currentSlide = slideList[i];
         currentSlide.SetActive(true);
     }
