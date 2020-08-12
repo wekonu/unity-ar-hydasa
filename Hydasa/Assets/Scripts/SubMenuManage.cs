@@ -28,7 +28,6 @@ public class SubMenuManage : MonoBehaviour
 
     public void OpenSubMenu(GameObject subMenu)
     {
-        Debug.Log("OWYEAAHHHHHHH");
         currentSlide = subMenu;
         currentSlide.SetActive(true);
         slideBuffer.SetActive(false);
