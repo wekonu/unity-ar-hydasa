@@ -10,11 +10,15 @@ public class SlideManage : MonoBehaviour
 
     private static List<GameObject> slideList;
     private GameObject currentSlide;
+    private GameObject btnLeft;
+    private GameObject btnRight;
 
     private int i = 0;
 
     private void Awake()
     {
+        btnLeft = GameObject.Find("Btn_Left");
+        btnRight = GameObject.Find("Btn_Right");
         slideList = slides.ToList<GameObject>();
         for (int j = 0; j < slideList.Count; j++)
         {
@@ -22,6 +26,7 @@ public class SlideManage : MonoBehaviour
         }
         currentSlide = slideList[i];
         currentSlide.SetActive(true);
+        IsFirstSlide();
     }
 
     public void OpenNextSlide()
@@ -40,6 +45,8 @@ public class SlideManage : MonoBehaviour
             currentSlide = slideList[i];
             currentSlide.SetActive(true);
         }
+        IsFirstSlide();
+        IsLastSlide();
     }
 
     public void OpenPreviousSlide()
@@ -58,5 +65,33 @@ public class SlideManage : MonoBehaviour
             currentSlide = slideList[i];
             currentSlide.SetActive(true);
         }
+        IsFirstSlide();
+        IsLastSlide();
+    }
+
+    public bool IsFirstSlide()
+    {
+        bool activateLeft = false;
+        if (currentSlide == slideList[0])
+        {
+            btnLeft.SetActive(activateLeft);
+            btnRight.SetActive(!activateLeft);
+            return true;
+        }
+        else
+            return false;
+    }
+
+    public bool IsLastSlide()
+    {
+        bool activateRight = false;
+        if (currentSlide == slideList[slideList.Count - 1])
+        {
+            btnRight.SetActive(activateRight);
+            btnLeft.SetActive(!activateRight);
+            return true;
+        }
+        else
+            return false;
     }
 }

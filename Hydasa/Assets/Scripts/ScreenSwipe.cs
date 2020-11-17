@@ -54,12 +54,14 @@ public class ScreenSwipe : MonoBehaviour
             if (distance.x > 0)
             {
                 // swipe left
-                slideManage.OpenNextSlide();
+                if (!slideManage.IsFirstSlide())
+                    slideManage.OpenPreviousSlide();
             }
             else if (distance.x < 0)
             {
                 // swipe right
-                slideManage.OpenPreviousSlide();
+                if (!slideManage.IsLastSlide())
+                    slideManage.OpenNextSlide();
             }
         }
         else if (Mathf.Abs(distance.x) < Mathf.Abs(distance.y))
