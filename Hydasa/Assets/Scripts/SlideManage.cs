@@ -79,7 +79,10 @@ public class SlideManage : MonoBehaviour
             return true;
         }
         else
+        {
+            btnLeft.SetActive(!activateLeft);
             return false;
+        }
     }
 
     public bool IsLastSlide()
@@ -92,6 +95,9 @@ public class SlideManage : MonoBehaviour
             return true;
         }
         else
+        {
+            btnRight.SetActive(!activateRight);
             return false;
+        }
     }
 }
